@@ -1,0 +1,35 @@
+//Aim : Removing the Element in the string and printing remaining element
+//Name : Jenis Patel
+//Student ID : 21CE093import java.util.*
+import java.util.*;
+public class Practical6{
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int l;
+        System.out.print("Enter length :");
+        l=sc.nextInt();
+        String[] m=new String[l];
+        String[] x=new String[l];
+        for(int i=0;i<l;i++)
+        {
+            m[i]=sc.next();
+        }
+        String n;
+        n=sc.next();
+        int p=0;
+        for(int j=0;j<l;j++)
+        {
+            if(!m[j].contains(n))
+            {
+                x[p]=m[j];
+                p++;
+            }
+        }
+        for (int q=0;q<p;q++)
+        {
+            System.out.print(x[q]);
+        }
+    }
+
+}
