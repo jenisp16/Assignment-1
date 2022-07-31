@@ -1,0 +1,32 @@
+//ID : 21CE093
+//Name : Jenis Patel
+//Aim : using  charAt() in String for find some particular char
+
+import java.util.Scanner;
+public class Practical2
+{
+    public static void main(String[] args)
+    {
+
+        Scanner sc =new Scanner (System.in);
+        String a;
+
+        a=sc.next();
+        if(a.charAt(0)=='o')
+        {
+            System.out.print("o");
+            if(a.charAt(1)=='z')
+            {
+                System.out.println("z");
+            }
+        }
+        else if(a.charAt(1)=='z')
+        {
+            System.out.println('z');
+        }
+        else{
+            System.out.print(a.charAt(0));
+            System.out.print(a.charAt(1));
+        }
+    }
+}
