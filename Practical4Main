@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+
+public class Practical4Main {
+    public static void main(String[] args) {
+
+        Scanner scs = new Scanner(System.in);
+
+        System.out.print("Enter size of array ");
+        int aa = scs.nextInt();
+        Practical4 as = new Practical4(aa);
+
+    }
+}
