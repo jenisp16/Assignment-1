@@ -1,0 +1,34 @@
+//Name : Jenis Patel
+//Student ID : 21CE093
+//Aim : How many 2 char are same in string.
+
+
+import java.util.*;
+import static java.lang.Math.min;
+public class Practical5 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter first string : ");
+        String m=sc.next();
+        System.out.println("Enter second string : ");
+        String n=sc.next();
+        int o=stringMatch(m,n);
+        System.out.println(o);
+        sc.close();
+    }
+    public static int stringMatch(String x,String y)
+    {
+        int count=0;
+        int p=min(x.length(),y.length());
+        for(int i=0;i<p-1;i++)
+        {
+            String z=x.substring(i,i+2);
+            String t=y.substring(i,i+2);
+            if(z.equals(t))
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+}
