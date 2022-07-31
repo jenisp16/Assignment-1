@@ -1,0 +1,36 @@
+//Student ID : 21CE093
+//Name : Jenis Patel
+//Aim :Find any number in string in seqence.
+
+import java.util.Scanner;
+
+public class Practical4 {
+
+    Scanner sc = new Scanner(System.in);
+    Practical4(int a ) {
+        int m[] = new int[a];
+        System.out.println("Enter array ");
+        for (int i = 0; i < a; i++) {
+            m[i] = sc.nextInt();
+        }
+        int xy=0;
+        for ( int i=0; i<a-2 ; i++) {
+            if (m[i] == 1 && m[i + 1] == 2 && m[i + 2] == 3) {
+                xy++;
+            }
+        }
+        System.out.print("Your  array is ");
+        for ( int i=0; i<a ; i++)
+        {
+            System.out.print(m[i]);
+        }
+        System.out.println();
+        if(xy==0)
+            System.out.println("false ");
+        else
+            System.out.println("true ");
+
+
+    }
+
+}
